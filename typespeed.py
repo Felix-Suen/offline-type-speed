@@ -89,7 +89,7 @@ def main():
 
     response = input("Would you like to race?\n\t'Y' for yes\n\t'N' for no\n\t'AVG' for your wpm avg\n\t'GRAPH' for graph of WPM history\n\t")
     if(response.lower().strip() == "y"):
-        #restarts the program
+        #restarts the program and clear line
         os.system('cls')
         test()
     elif(response.lower().strip() == "avg"):
