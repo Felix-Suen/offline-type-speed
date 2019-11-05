@@ -2,6 +2,7 @@ import sys
 import matplotlib.pyplot as plt
 import time
 from random import randint
+import os
 
 #Variables
 prompt = ""
@@ -89,6 +90,7 @@ def main():
     response = input("Would you like to race?\n\t'Y' for yes\n\t'N' for no\n\t'AVG' for your wpm avg\n\t'GRAPH' for graph of WPM history\n\t")
     if(response.lower().strip() == "y"):
         #restarts the program
+        os.system('cls')
         test()
     elif(response.lower().strip() == "avg"):
         #Displays their wpm average
