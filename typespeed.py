@@ -20,7 +20,7 @@ def createPrompt(le, wordsl):
 def test():
     global wordslist, response, prompt, timed, wpm
     #Create the prompt and show it to the user
-    prompt = createPrompt(10, wordslist)
+    prompt = createPrompt(20, wordslist)
     print("\n",prompt,"\n", sep ="")
 
     #Have the user type in the prompt
